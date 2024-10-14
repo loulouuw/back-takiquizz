@@ -2,6 +2,7 @@ package com.takima.backskeleton.services;
 
 import com.takima.backskeleton.DAO.QuestionDao;
 import com.takima.backskeleton.DAO.QuestionDao;
+import com.takima.backskeleton.models.Leaderboard;
 import com.takima.backskeleton.models.Question;
 import com.takima.backskeleton.models.Question;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,6 +15,12 @@ public class QuestionService {
 
     @Autowired
     private QuestionDao questionDao;
+
+    public Question saveQuestion(Question question) {return questionDao.save(question);}
+
+    public void deleteQuestion(Long id) {
+        questionDao.deleteById(id);
+    }
 
     public List<Question> getAllQuestion() {
         return questionDao.findAll();

@@ -15,6 +15,10 @@ public class LeaderboardService {
     @Autowired
     private LeaderboardDao leaderboardDao;
 
+    public Leaderboard saveLeaderboard(Leaderboard leaderboard) {return leaderboardDao.save(leaderboard);}
+
+    public void deleteLeaderboard(Long id) {leaderboardDao.deleteById(id);}
+
     public Optional<Leaderboard> getLeadearboardById(Long id) {
         return leaderboardDao.findById(id);
     }

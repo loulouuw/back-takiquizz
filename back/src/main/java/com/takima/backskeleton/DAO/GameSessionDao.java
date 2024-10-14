@@ -5,5 +5,6 @@ import com.takima.backskeleton.models.SurvivalMode;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface GameSessionDao extends JpaRepository<GameSession, Long> {
+    GameSession save(GameSession gameSession);
     GameSession findById(long id);
 }

@@ -7,6 +7,7 @@ import com.takima.backskeleton.models.Quiz;
 import java.util.List;
 
 public interface QuizDao extends JpaRepository<Quiz, Long>{
+    Quiz save(Quiz quiz);
     List<Quiz> findByTitle(String title);
     List<Quiz> findAll();
     Quiz findById(long id);

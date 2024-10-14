@@ -17,6 +17,12 @@ public class QuizService {
     @Autowired
     private QuizDao quizDao;
 
+    public Quiz saveQuiz(Quiz quiz) {return quizDao.save(quiz);}
+
+    public void deleteQuiz(Long id) {
+        quizDao.deleteById(id);
+    }
+
     public List<Quiz> getAllQuiz() {
         return quizDao.findAll();
     }
@@ -29,7 +35,4 @@ public class QuizService {
         return quizDao.findById(id);
     }
 
-    public List<Question> getQuestionById(long id) {
-        return quizDao.findQuestionsById(id);
-    }
 }

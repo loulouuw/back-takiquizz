@@ -8,6 +8,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.List;
 
 public interface QuestionDao extends JpaRepository<Question, Long>{
+    Question save(Question question);
     List<Question> findAll();
     Question findById(long id);
     List<Question> findByQuestionType(String questionType);
