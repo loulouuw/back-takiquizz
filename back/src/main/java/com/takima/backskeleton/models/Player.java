@@ -2,38 +2,31 @@ package com.takima.backskeleton.models;
 
 import jakarta.persistence.*;
 import lombok.Getter;
-
-import java.util.List;
+import lombok.Setter;
 
 @Entity
 @Table(name = "players")
 @Getter
+@Setter
 public class Player {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
+    @GeneratedValue(strategy = GenerationType.IDENTITY, generator = "players_id_seq")
+    private Integer id;
     private String username;
     private String email;
     private int totalPoints;
 
-    @ManyToMany(mappedBy = "players")
-    private List<Quiz> quizzesPlayed;
-
-    private int duelVictories;
 
     public Player() {}
 
     // Builder pattern
     public static class Builder {
-        private Long id;
+        private Integer id;
         private String username;
         private String email;
         private int totalPoints;
-        private List<Quiz> quizzesPlayed;
-        private int duelVictories;
 
-        public Builder id(Long id) {
+        public Builder id(Integer id) {
             this.id = id;
             return this;
         }
@@ -53,15 +46,6 @@ public class Player {
             return this;
         }
 
-        public Builder quizzesPlayed(List<Quiz> quizzesPlayed) {
-            this.quizzesPlayed = quizzesPlayed;
-            return this;
-        }
-
-        public Builder duelVictories(int duelVictories) {
-            this.duelVictories = duelVictories;
-            return this;
-        }
 
         public Player build() {
             Player player = new Player();
@@ -69,8 +53,6 @@ public class Player {
             player.username = this.username;
             player.email = this.email;
             player.totalPoints = this.totalPoints;
-            player.quizzesPlayed = this.quizzesPlayed;
-            player.duelVictories = this.duelVictories;
             return player;
         }
     }

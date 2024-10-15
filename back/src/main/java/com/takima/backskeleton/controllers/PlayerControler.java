@@ -14,6 +14,10 @@ public class PlayerControler {
 
     private PlayerService playerService;
 
+    public PlayerControler(PlayerService playerService) {
+        this.playerService = playerService;
+    }
+
     @GetMapping("/{id}")
     public ResponseEntity<Player> getPlayerById(@PathVariable Long id) {
         return playerService.getPlayerById(id)
@@ -54,8 +58,5 @@ public class PlayerControler {
         return playerService.findPlayersWithMoreThanXPoints(points);
     }
 
-    @GetMapping("/victories/{victories}")
-    public List<Player> findPlayersWithDuelVictories(@PathVariable int victories) {
-        return playerService.findPlayersWithDuelVictories(victories);
-    }
+
 }

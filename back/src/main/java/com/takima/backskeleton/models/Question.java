@@ -1,23 +1,20 @@
 package com.takima.backskeleton.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Getter;
-
-import java.util.List;
+import lombok.Setter;
 
 @Entity
 @Table(name = "questions")
 @Getter
+@Setter
 public class Question {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Integer id;
 
     private String statement;
-
-    @ElementCollection
-    private List<String> options;
-
     private String correctAnswer;
     private String questionType;
     private String image;
@@ -25,22 +22,22 @@ public class Question {
 
     @ManyToOne
     @JoinColumn(name = "quiz_id")
+    @JsonIgnore
     private Quiz quiz;
 
     public Question() {}
 
     // Builder pattern
     public static class Builder {
-        private Long id;
+        private Integer id;
         private String statement;
-        private List<String> options;
         private String correctAnswer;
         private String questionType;
         private String image;
         private int timeLimit;
         private Quiz quiz;
 
-        public Builder id(Long id) {
+        public Builder id(Integer id) {
             this.id = id;
             return this;
         }
@@ -50,10 +47,6 @@ public class Question {
             return this;
         }
 
-        public Builder options(List<String> options) {
-            this.options = options;
-            return this;
-        }
 
         public Builder correctAnswer(String correctAnswer) {
             this.correctAnswer = correctAnswer;
@@ -84,7 +77,6 @@ public class Question {
             Question question = new Question();
             question.id = this.id;
             question.statement = this.statement;
-            question.options = this.options;
             question.correctAnswer = this.correctAnswer;
             question.questionType = this.questionType;
             question.image = this.image;

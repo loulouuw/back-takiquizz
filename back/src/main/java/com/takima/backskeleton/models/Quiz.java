@@ -2,38 +2,39 @@ package com.takima.backskeleton.models;
 
 import jakarta.persistence.*;
 import lombok.Getter;
+import lombok.Setter;
 
 import java.util.List;
 
 @Entity
 @Table(name = "quizzes")
 @Getter
+@Setter
 public class Quiz {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Integer id;
 
     private String title;
     private String description;
 
+
     @OneToMany(mappedBy = "quiz", cascade = CascadeType.ALL)
     private List<Question> questions;
 
-    private boolean isSurvivalMode;
     private int timeLimitPerQuestion; // Time in seconds
 
     public Quiz() {}
 
     // Builder pattern for more flexibility
     public static class Builder {
-        private Long id;
+        private Integer id;
         private String title;
         private String description;
         private List<Question> questions;
-        private boolean isSurvivalMode;
         private int timeLimitPerQuestion;
 
-        public Builder id(Long id) {
+        public Builder id(Integer id) {
             this.id = id;
             return this;
         }
@@ -53,11 +54,6 @@ public class Quiz {
             return this;
         }
 
-        public Builder isSurvivalMode(boolean isSurvivalMode) {
-            this.isSurvivalMode = isSurvivalMode;
-            return this;
-        }
-
         public Builder timeLimitPerQuestion(int timeLimitPerQuestion) {
             this.timeLimitPerQuestion = timeLimitPerQuestion;
             return this;
@@ -69,7 +65,6 @@ public class Quiz {
             quiz.title = this.title;
             quiz.description = this.description;
             quiz.questions = this.questions;
-            quiz.isSurvivalMode = this.isSurvivalMode;
             quiz.timeLimitPerQuestion = this.timeLimitPerQuestion;
             return quiz;
         }

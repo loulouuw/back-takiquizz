@@ -12,7 +12,7 @@ import java.util.List;
 public class GameSession {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Integer id;
 
     @ManyToOne
     private Quiz quiz;
@@ -24,22 +24,23 @@ public class GameSession {
     private Instant startTime;
     private Instant endTime;
 
-    @ElementCollection
-    private List<Integer> scores;
+    private int score1;
+    private int score2;
 
     public GameSession() {}
 
     // Builder pattern
     public static class Builder {
-        private Long id;
+        private Integer id;
         private Quiz quiz;
         private List<Player> players;
         private int currentQuestionIndex;
         private Instant startTime;
         private Instant endTime;
-        private List<Integer> scores;
+        private int score1;
+        private int score2;
 
-        public Builder id(Long id) {
+        public Builder id(Integer id) {
             this.id = id;
             return this;
         }
@@ -69,8 +70,13 @@ public class GameSession {
             return this;
         }
 
-        public Builder scores(List<Integer> scores) {
-            this.scores = scores;
+        public Builder score1(int score1) {
+            this.score1 = score1;
+            return this;
+        }
+
+        public Builder score2(int score2) {
+            this.score2 = score2;
             return this;
         }
 
@@ -82,7 +88,8 @@ public class GameSession {
             gameSession.currentQuestionIndex = this.currentQuestionIndex;
             gameSession.startTime = this.startTime;
             gameSession.endTime = this.endTime;
-            gameSession.scores = this.scores;
+            gameSession.score1 = this.score1;
+            gameSession.score2 = this.score2;
             return gameSession;
         }
     }

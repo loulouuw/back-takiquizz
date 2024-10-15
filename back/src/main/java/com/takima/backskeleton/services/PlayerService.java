@@ -11,8 +11,11 @@ import java.util.Optional;
 @Service
 public class PlayerService {
 
-    @Autowired
     private PlayerDao playerDao;
+
+    public PlayerService(PlayerDao playerDao) {
+        this.playerDao = playerDao;
+    }
 
     // Créer ou mettre à jour un joueur
     public Player savePlayer(Player player) {
@@ -49,8 +52,4 @@ public class PlayerService {
         return playerDao.findByTotalPointsGreaterThan(points);
     }
 
-    // Trouver des joueurs avec un nombre spécifique de victoires en duel
-    public List<Player> findPlayersWithDuelVictories(int victories) {
-        return playerDao.findByDuelVictories(victories);
-    }
 }

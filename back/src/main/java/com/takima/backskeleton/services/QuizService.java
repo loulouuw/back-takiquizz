@@ -14,8 +14,12 @@ import java.util.Optional;
 @Service
 
 public class QuizService {
-    @Autowired
+
     private QuizDao quizDao;
+
+    public QuizService(QuizDao quizDao) {
+        this.quizDao = quizDao;
+    }
 
     public Quiz saveQuiz(Quiz quiz) {return quizDao.save(quiz);}
 
