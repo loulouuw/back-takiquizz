@@ -33,7 +33,9 @@ CREATE TABLE game_sessions
     start_time TIMESTAMP NOT NULL,
     end_time TIMESTAMP,
     score1 INT,
-    score2 INT
+    score2 INT,
+    player_id1 INT,
+    player_id2 INT
 );
 
 CREATE TABLE game_sessions_players
