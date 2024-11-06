@@ -9,7 +9,7 @@ public interface PlayerDao extends JpaRepository <Player, Long> {
     Player findByUsername(String username);
     List<Player> findAll();
     Player findById(long id);
-    List<Player> findByEmail(String email);
+    Player findByEmail(String email);
     List<Player> findByTotalPointsGreaterThan(int points);
 
 }

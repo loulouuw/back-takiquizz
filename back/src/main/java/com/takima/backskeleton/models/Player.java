@@ -14,6 +14,7 @@ public class Player {
     private Integer id;
     private String username;
     private String email;
+    private String mdp;
     private int totalPoints;
 
 
@@ -24,6 +25,7 @@ public class Player {
         private Integer id;
         private String username;
         private String email;
+        private String mdp;
         private int totalPoints;
 
         public Builder id(Integer id) {
@@ -46,12 +48,18 @@ public class Player {
             return this;
         }
 
+        public Builder mdp(String mdp) {
+            this.mdp = mdp;
+            return this;
+        }
+
 
         public Player build() {
             Player player = new Player();
             player.id = this.id;
             player.username = this.username;
             player.email = this.email;
+            player.mdp = this.mdp;
             player.totalPoints = this.totalPoints;
             return player;
         }

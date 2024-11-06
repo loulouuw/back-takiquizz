@@ -3,6 +3,7 @@ CREATE TABLE players
     id SERIAL PRIMARY KEY,
     username TEXT NOT NULL,
     email TEXT NOT NULL,
+    mdp TEXT NOT NULL,
     total_points INT NOT NULL
 );
 

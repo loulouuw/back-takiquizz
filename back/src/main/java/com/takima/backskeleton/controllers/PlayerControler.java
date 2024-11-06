@@ -49,7 +49,7 @@ public class PlayerControler {
     }
 
     @GetMapping("/email/{email}")
-    public List<Player> findByEmail(@PathVariable String email) {
+    public Player findByEmail(@PathVariable String email) {
         return playerService.findByEmail(email);
     }
 

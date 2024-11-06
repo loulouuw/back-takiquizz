@@ -43,7 +43,7 @@ public class PlayerService {
     }
 
     // Trouver des joueurs par email
-    public List<Player> findByEmail(String email) {
+    public Player findByEmail(String email) {
         return playerDao.findByEmail(email);
     }
 
