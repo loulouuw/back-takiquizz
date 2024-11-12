@@ -5,6 +5,8 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.List;
+
 @Entity
 @Table(name = "questions")
 @Getter
@@ -19,6 +21,11 @@ public class Question {
     private String questionType;
     private String image;
     private int timeLimit; // Time in seconds for this specific question
+
+    @ElementCollection
+    @CollectionTable(name = "incorrect_answers", joinColumns = @JoinColumn(name = "question_id"))
+    @Column(name = "incorrect_answer")
+    private List<String> incorrectAnswers; // List of incorrect answers
 
     @ManyToOne
     @JoinColumn(name = "quiz_id")
@@ -35,6 +42,7 @@ public class Question {
         private String questionType;
         private String image;
         private int timeLimit;
+        private List<String> incorrectAnswers;
         private Quiz quiz;
 
         public Builder id(Integer id) {
@@ -46,7 +54,6 @@ public class Question {
             this.statement = statement;
             return this;
         }
-
 
         public Builder correctAnswer(String correctAnswer) {
             this.correctAnswer = correctAnswer;
@@ -68,6 +75,11 @@ public class Question {
             return this;
         }
 
+        public Builder incorrectAnswers(List<String> incorrectAnswers) {
+            this.incorrectAnswers = incorrectAnswers;
+            return this;
+        }
+
         public Builder quiz(Quiz quiz) {
             this.quiz = quiz;
             return this;
@@ -81,6 +93,7 @@ public class Question {
             question.questionType = this.questionType;
             question.image = this.image;
             question.timeLimit = this.timeLimit;
+            question.incorrectAnswers = this.incorrectAnswers;
             question.quiz = this.quiz;
             return question;
         }

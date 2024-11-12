@@ -5,12 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51929f3d-00f3-4018-9329-b2036557721e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/takima/backskeleton/DAO/PlayerDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/takima/backskeleton/DAO/PlayerDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/takima/backskeleton/controllers/PlayerControler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/takima/backskeleton/controllers/PlayerControler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/takima/backskeleton/models/Player$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/takima/backskeleton/models/Player$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/takima/backskeleton/models/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/takima/backskeleton/models/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/takima/backskeleton/services/PlayerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/takima/backskeleton/services/PlayerService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/initdb/1_TABLES.sql" beforeDir="false" afterPath="$PROJECT_DIR$/initdb/1_TABLES.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/initdb/2_DEFAULT_ENTRIES.sql" beforeDir="false" afterPath="$PROJECT_DIR$/initdb/2_DEFAULT_ENTRIES.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/takima/backskeleton/models/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/takima/backskeleton/models/Question.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,42 +40,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Database Script.1_TABLES.sql.executor&quot;: &quot;Run&quot;,
-    &quot;Database Script.2_DEFAULT_ENTRIES.sql.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.generated-requests | #1.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.back-skeleton [spring-boot:run].executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Spring Boot.BackSkeletonApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/nicol/OneDrive/Documents/Ecole/Cinquieme_annee/Projet-java/Taki-app/Taki-back/back&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Database Script.1_TABLES.sql.executor": "Run",
+    "Database Script.2_DEFAULT_ENTRIES.sql.executor": "Run",
+    "HTTP Request.generated-requests | #1.executor": "Run",
+    "Maven.back-skeleton [spring-boot:run].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.BackSkeletonApplication.executor": "Run",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/nicol/OneDrive/Documents/Ecole/Cinquieme_annee/Projet-java/Taki-app/Taki-back/back",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "settings.sync",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ],
-    &quot;RunConfigurationTargetLRU&quot;: [
-      &quot;26518eae-efb3-4587-8f23-14f11752a9a1&quot;,
-      &quot;bed6d43f-0c0d-4f3e-9662-fc7a8ef2a328&quot;,
-      &quot;ba7973dd-6f75-4ef3-b596-bf9d50f9f99f&quot;,
-      &quot;15c5a148-497c-42e8-8f9d-bdd022233c00&quot;,
-      &quot;0a427cd3-d74a-4368-9033-b075ad86f4d5&quot;
+    "RunConfigurationTargetLRU": [
+      "bed6d43f-0c0d-4f3e-9662-fc7a8ef2a328",
+      "ba7973dd-6f75-4ef3-b596-bf9d50f9f99f",
+      "15c5a148-497c-42e8-8f9d-bdd022233c00",
+      "0a427cd3-d74a-4368-9033-b075ad86f4d5",
+      "a3a90e6a-9b51-4362-afc3-9df597425149"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\nicol\OneDrive\Documents\Ecole\Cinquième année\Projet-java\Taki-Back\back\src\main\java\com\takima\backskeleton\Old" />
@@ -86,17 +88,17 @@
       <command value="mvn spring-boot:run" />
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.BackSkeletonApplication">
+  <component name="RunManager" selected="Database Script.2_DEFAULT_ENTRIES.sql">
     <configuration name="1_TABLES.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
       <script-file value="$PROJECT_DIR$/initdb/1_TABLES.sql" />
       <script-mode>FILE</script-mode>
-      <data-source id="0a427cd3-d74a-4368-9033-b075ad86f4d5" />
+      <data-source id="a3a90e6a-9b51-4362-afc3-9df597425149" />
       <method v="2" />
     </configuration>
     <configuration name="2_DEFAULT_ENTRIES.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
       <script-file value="$PROJECT_DIR$/initdb/2_DEFAULT_ENTRIES.sql" />
       <script-mode>FILE</script-mode>
-      <data-source id="0a427cd3-d74a-4368-9033-b075ad86f4d5" />
+      <data-source id="a3a90e6a-9b51-4362-afc3-9df597425149" />
       <method v="2" />
     </configuration>
     <configuration name="generated-requests | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" requestIdentifier="#1" runType="Run single request">
@@ -174,11 +176,30 @@
       <workItem from="1730895727951" duration="1963000" />
       <workItem from="1731166373521" duration="152000" />
       <workItem from="1731166758055" duration="445000" />
-      <workItem from="1731167653937" duration="195000" />
+      <workItem from="1731167653937" duration="2248000" />
+      <workItem from="1731399201093" duration="153000" />
+      <workItem from="1731400988468" duration="11000" />
+      <workItem from="1731424050268" duration="100000" />
+      <workItem from="1731440195600" duration="585000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

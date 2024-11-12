@@ -21,6 +21,7 @@ CREATE TABLE questions
     statement TEXT NOT NULL,
     correct_answer TEXT NOT NULL,
     question_type TEXT NOT NULL,
+    incorrect_answers TEXT[] NOT NULL,
     image TEXT,
     time_limit INT NOT NULL,
     quiz_id SERIAL REFERENCES quizzes(id)
