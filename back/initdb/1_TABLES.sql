@@ -21,10 +21,14 @@ CREATE TABLE questions
     statement TEXT NOT NULL,
     correct_answer TEXT NOT NULL,
     question_type TEXT NOT NULL,
-    incorrect_answers TEXT[] NOT NULL,
     image TEXT,
     time_limit INT NOT NULL,
     quiz_id SERIAL REFERENCES quizzes(id)
+);
+
+CREATE TABLE question_incorrect_answers (
+    question_id INT REFERENCES questions(id),
+    incorrect_answer TEXT NOT NULL
 );
 
 CREATE TABLE game_sessions
@@ -46,4 +50,6 @@ CREATE TABLE game_sessions_players
     players_id SERIAL REFERENCES players(id),
     PRIMARY KEY (game_session_id, players_id)
 );
+
+
 

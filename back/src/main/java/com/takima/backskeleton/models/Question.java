@@ -23,9 +23,10 @@ public class Question {
     private int timeLimit; // Time in seconds for this specific question
 
     @ElementCollection
-    @CollectionTable(name = "incorrect_answers", joinColumns = @JoinColumn(name = "question_id"))
+    @CollectionTable(name = "question_incorrect_answers", joinColumns = @JoinColumn(name = "question_id"))
     @Column(name = "incorrect_answer")
-    private List<String> incorrectAnswers; // List of incorrect answers
+    private List<String> incorrectAnswers;
+
 
     @ManyToOne
     @JoinColumn(name = "quiz_id")
