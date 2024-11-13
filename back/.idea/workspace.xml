@@ -7,16 +7,15 @@
     <list default="true" id="51929f3d-00f3-4018-9329-b2036557721e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a3a90e6a-9b51-4362-afc3-9df597425149.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a3a90e6a-9b51-4362-afc3-9df597425149/storage_v2/_src_/database/TakiBase.HNac3Q.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a3a90e6a-9b51-4362-afc3-9df597425149/storage_v2/_src_/database/TakiBase.HNac3Q/schema/public.abK9xQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fed84191-58ca-41ae-adf1-bea853c31d09.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fed84191-58ca-41ae-adf1-bea853c31d09/storage_v2/_src_/database/TakiBase.HNac3Q.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fed84191-58ca-41ae-adf1-bea853c31d09/storage_v2/_src_/database/TakiBase.HNac3Q/schema/public.abK9xQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8dcbfe05-5265-431d-8d87-5652adb306df.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8dcbfe05-5265-431d-8d87-5652adb306df/storage_v2/_src_/database/TakiBase.HNac3Q.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8dcbfe05-5265-431d-8d87-5652adb306df/storage_v2/_src_/database/TakiBase.HNac3Q/schema/public.abK9xQ.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/initdb/1_TABLES.sql" beforeDir="false" afterPath="$PROJECT_DIR$/initdb/1_TABLES.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/initdb/2_DEFAULT_ENTRIES.sql" beforeDir="false" afterPath="$PROJECT_DIR$/initdb/2_DEFAULT_ENTRIES.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/takima/backskeleton/models/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/takima/backskeleton/models/Question.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/takima/backskeleton/controllers/GameSessionControler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/takima/backskeleton/controllers/GameSessionControler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/takima/backskeleton/controllers/PlayerControler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/takima/backskeleton/controllers/PlayerControler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/takima/backskeleton/controllers/QuestionControler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/takima/backskeleton/controllers/QuestionControler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/takima/backskeleton/controllers/QuizControler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/takima/backskeleton/controllers/QuizControler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/takima/backskeleton/controllers/QuizControler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/takima/backskeleton/controllers/QuizControler.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +61,7 @@
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/nicol/OneDrive/Documents/Ecole/Cinquieme_annee/Projet-java/Taki-app/Taki-back/back",
+    "last_opened_file_path": "C:/Users/nicol/OneDrive/Documents/Ecole/Cinquieme_annee/Projet-java/Taki-app/front-takiquizz",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -76,11 +75,11 @@
       "postgresql"
     ],
     "RunConfigurationTargetLRU": [
-      "0a427cd3-d74a-4368-9033-b075ad86f4d5",
       "a3a90e6a-9b51-4362-afc3-9df597425149",
       "fed84191-58ca-41ae-adf1-bea853c31d09",
       "8dcbfe05-5265-431d-8d87-5652adb306df",
-      "643fed61-313f-4929-9174-95e7e3d5693d"
+      "643fed61-313f-4929-9174-95e7e3d5693d",
+      "8e7e97dd-e1d9-41bf-a5ae-e95258fd90d9"
     ]
   }
 }]]></component>
@@ -98,13 +97,13 @@
     <configuration name="1_TABLES.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
       <script-file value="$PROJECT_DIR$/initdb/1_TABLES.sql" />
       <script-mode>FILE</script-mode>
-      <data-source id="643fed61-313f-4929-9174-95e7e3d5693d" />
+      <data-source id="8e7e97dd-e1d9-41bf-a5ae-e95258fd90d9" />
       <method v="2" />
     </configuration>
     <configuration name="2_DEFAULT_ENTRIES.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
       <script-file value="$PROJECT_DIR$/initdb/2_DEFAULT_ENTRIES.sql" />
       <script-mode>FILE</script-mode>
-      <data-source id="643fed61-313f-4929-9174-95e7e3d5693d" />
+      <data-source id="8e7e97dd-e1d9-41bf-a5ae-e95258fd90d9" />
       <method v="2" />
     </configuration>
     <configuration name="generated-requests | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" requestIdentifier="#1" runType="Run single request">
@@ -188,7 +187,8 @@
       <workItem from="1731424050268" duration="100000" />
       <workItem from="1731440195600" duration="731000" />
       <workItem from="1731446962444" duration="1681000" />
-      <workItem from="1731493807709" duration="617000" />
+      <workItem from="1731493807709" duration="1294000" />
+      <workItem from="1731503372843" duration="1543000" />
     </task>
     <servers />
   </component>
