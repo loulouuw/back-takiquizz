@@ -5,7 +5,7 @@
       <DateStyle>mdy</DateStyle>
       <IntrospectionStateNumber>748</IntrospectionStateNumber>
       <ServerVersion>17.0</ServerVersion>
-      <StartupTime>1731440744</StartupTime>
+      <StartupTime>1731494401</StartupTime>
       <TimeZones>true ACDT
 true ACSST
 false ACST
@@ -4827,7 +4827,7 @@ false posixrules
       <Comment>standard public schema</Comment>
       <Current>1</Current>
       <IntrospectionStateNumber>748</IntrospectionStateNumber>
-      <LastIntrospectionLocalTimestamp>2024-11-12.19:46:25</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-11-13.10:40:33</LastIntrospectionLocalTimestamp>
       <ObjectId>2200</ObjectId>
       <StateNumber>532</StateNumber>
       <OwnerName>pg_database_owner</OwnerName>
@@ -5139,19 +5139,19 @@ players_id</ColNames>
       <StoredType>text|0s</StoredType>
       <TypeId>25</TypeId>
     </column>
-    <column id="307" parent="277" name="question_type">
+    <column id="307" parent="277" name="incorrect_answers">
       <NotNull>1</NotNull>
       <Position>4</Position>
       <StateNumber>743</StateNumber>
       <StoredType>text|0s</StoredType>
       <TypeId>25</TypeId>
     </column>
-    <column id="308" parent="277" name="incorrect_answers">
+    <column id="308" parent="277" name="question_type">
       <NotNull>1</NotNull>
       <Position>5</Position>
       <StateNumber>743</StateNumber>
-      <StoredType>text[]|0s</StoredType>
-      <TypeId>1009</TypeId>
+      <StoredType>text|0s</StoredType>
+      <TypeId>25</TypeId>
     </column>
     <column id="309" parent="277" name="image">
       <Position>6</Position>

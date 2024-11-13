@@ -21,11 +21,7 @@ public class Question {
     private String questionType;
     private String image;
     private int timeLimit; // Time in seconds for this specific question
-
-    @ElementCollection
-    @CollectionTable(name = "question_incorrect_answers", joinColumns = @JoinColumn(name = "question_id"))
-    @Column(name = "incorrect_answer")
-    private List<String> incorrectAnswers;
+    private String incorrectAnswers;
 
 
     @ManyToOne
@@ -43,7 +39,7 @@ public class Question {
         private String questionType;
         private String image;
         private int timeLimit;
-        private List<String> incorrectAnswers;
+        private String incorrectAnswers;
         private Quiz quiz;
 
         public Builder id(Integer id) {
@@ -76,7 +72,7 @@ public class Question {
             return this;
         }
 
-        public Builder incorrectAnswers(List<String> incorrectAnswers) {
+        public Builder incorrectAnswers(String incorrectAnswers) {
             this.incorrectAnswers = incorrectAnswers;
             return this;
         }
