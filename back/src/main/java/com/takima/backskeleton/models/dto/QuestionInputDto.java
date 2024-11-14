@@ -12,6 +12,6 @@ public class QuestionInputDto {
     private String questionType;
     private String image;
     private int timeLimit;
-
+    private String incorrectAnswers;
     private int quizzId;
 }
