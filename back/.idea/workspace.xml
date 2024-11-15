@@ -5,16 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51929f3d-00f3-4018-9329-b2036557721e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/takima/backskeleton/models/dto/LoginInputDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/takima/backskeleton/models/dto/LoginResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/takima/backskeleton/models/dto/RegisterInputDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/takima/backskeleton/config/WebConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/42dafd31-47fc-48fb-9d92-a9cb815ec9e9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/42dafd31-47fc-48fb-9d92-a9cb815ec9e9.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/643fed61-313f-4929-9174-95e7e3d5693d.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/643fed61-313f-4929-9174-95e7e3d5693d/storage_v2/_src_/database/TakiBase.HNac3Q.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/643fed61-313f-4929-9174-95e7e3d5693d/storage_v2/_src_/database/TakiBase.HNac3Q/schema/public.abK9xQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8e7e97dd-e1d9-41bf-a5ae-e95258fd90d9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8e7e97dd-e1d9-41bf-a5ae-e95258fd90d9/storage_v2/_src_/database/TakiBase.HNac3Q.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8e7e97dd-e1d9-41bf-a5ae-e95258fd90d9/storage_v2/_src_/database/TakiBase.HNac3Q/schema/public.abK9xQ.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/initdb/2_DEFAULT_ENTRIES.sql" beforeDir="false" afterPath="$PROJECT_DIR$/initdb/2_DEFAULT_ENTRIES.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/takima/backskeleton/DAO/PlayerDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/takima/backskeleton/DAO/PlayerDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/takima/backskeleton/controllers/PlayerControler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/takima/backskeleton/controllers/PlayerControler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/takima/backskeleton/services/PlayerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/takima/backskeleton/services/PlayerService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,11 +79,11 @@
       "postgresql"
     ],
     "RunConfigurationTargetLRU": [
-      "fed84191-58ca-41ae-adf1-bea853c31d09",
-      "8dcbfe05-5265-431d-8d87-5652adb306df",
       "643fed61-313f-4929-9174-95e7e3d5693d",
       "8e7e97dd-e1d9-41bf-a5ae-e95258fd90d9",
-      "42dafd31-47fc-48fb-9d92-a9cb815ec9e9"
+      "42dafd31-47fc-48fb-9d92-a9cb815ec9e9",
+      "bb2882bb-7126-43d3-8c72-74000605ca7b",
+      "8f19d4af-7ad9-46bc-8e03-15a3bf66e336"
     ]
   }
 }]]></component>
@@ -99,13 +101,13 @@
     <configuration name="1_TABLES.sql" type="DatabaseScript" editBeforeRun="true" nameIsGenerated="true">
       <script-file value="$PROJECT_DIR$/initdb/1_TABLES.sql" />
       <script-mode>FILE</script-mode>
-      <data-source id="42dafd31-47fc-48fb-9d92-a9cb815ec9e9" />
+      <data-source id="8f19d4af-7ad9-46bc-8e03-15a3bf66e336" />
       <method v="2" />
     </configuration>
     <configuration name="2_DEFAULT_ENTRIES.sql" type="DatabaseScript" editBeforeRun="true" nameIsGenerated="true">
       <script-file value="$PROJECT_DIR$/initdb/2_DEFAULT_ENTRIES.sql" />
       <script-mode>FILE</script-mode>
-      <data-source id="42dafd31-47fc-48fb-9d92-a9cb815ec9e9" />
+      <data-source id="8f19d4af-7ad9-46bc-8e03-15a3bf66e336" />
       <method v="2" />
     </configuration>
     <configuration name="generated-requests | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" requestIdentifier="#1" runType="Run single request">

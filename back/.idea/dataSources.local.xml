@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal" created-in="IU-242.23339.11">
-    <data-source name="TakiBase@localhost" uuid="42dafd31-47fc-48fb-9d92-a9cb815ec9e9">
-      <database-info product="PostgreSQL" version="17.0 (Debian 17.0-1.pgdg120+1)" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.6.0" dbms="POSTGRES" exact-version="17.0" exact-driver-version="42.6">
+    <data-source name="TakiBase@localhost" uuid="8f19d4af-7ad9-46bc-8e03-15a3bf66e336">
+      <database-info product="PostgreSQL" version="17.0 (Debian 17.0-1.pgdg120+1)" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.7.3" dbms="POSTGRES" exact-version="17.0" exact-driver-version="42.7">
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
       <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />

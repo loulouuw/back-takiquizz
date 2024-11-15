@@ -61,13 +61,14 @@ public class PlayerControler {
     public List<Player> findPlayersWithMoreThanXPoints(@PathVariable int points) {
         return playerService.findPlayersWithMoreThanXPoints(points);
     }
+
     @PostMapping("/register")
-    public ResponseEntity<String> registerPlayer(@RequestBody RegisterInputDto registerDTO) {
+    public ResponseEntity<Void> registerPlayer(@RequestBody RegisterInputDto registerDTO) {
         try {
             playerService.registerPlayer(registerDTO);
-            return ResponseEntity.status(201).body("Joueur enregistré avec succès.");
+            return ResponseEntity.status(201).build();  // Pas de corps de réponse, juste un statut HTTP 201
         } catch (IllegalArgumentException e) {
-            return ResponseEntity.status(400).body(e.getMessage());
+            return ResponseEntity.status(400).build();  // Erreur, renvoie juste un statut HTTP 400
         }
     }
 
