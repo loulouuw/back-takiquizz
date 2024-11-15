@@ -10,8 +10,8 @@ INSERT INTO quizzes (id, title, description, time_limit_per_question) VALUES (1,
 INSERT INTO quizzes (id, title, description, time_limit_per_question) VALUES (2, 'Science Trivia', 'How well do you know science?', 45);
 
 -- Insertion des questions
-INSERT INTO questions (id, statement, correct_answer, incorrect_answers, question_type, image, time_limit, quiz_id) VALUES
-(1, 'What is the capital of France?', 'Paris', 'London,Berlin,Madrid', 'multiple_choice', NULL, 30, 1),
-(2, 'Who developed the theory of relativity?', 'Albert Einstein', 'Isaac Newton,Galileo Galilei,Nikola Tesla', 'multiple_choice', NULL, 45, 2),
-(3, 'Which planet is known as the Red Planet?', 'Mars', 'Earth,Jupiter,Venus', 'multiple_choice', NULL, 30, 1),
-(4, 'What is the chemical symbol for water?', 'H2O', 'O2,CO2,H2', 'multiple_choice', NULL, 45, 2);
+INSERT INTO questions (statement, correct_answer, incorrect_answers, question_type, image, time_limit, quiz_id) VALUES
+( 'What is the capital of France?', 'Paris', 'London,Berlin,Madrid', 'multiple_choice', NULL, 30, 1),
+( 'Who developed the theory of relativity?', 'Albert Einstein', 'Isaac Newton,Galileo Galilei,Nikola Tesla', 'multiple_choice', NULL, 45, 2),
+( 'Which planet is known as the Red Planet?', 'Mars', 'Earth,Jupiter,Venus', 'multiple_choice', NULL, 30, 1),
+( 'What is the chemical symbol for water?', 'H2O', 'O2,CO2,H2', 'multiple_choice', NULL, 45, 2);

@@ -18,7 +18,8 @@ public class QuestionService {
         this.questionDao = questionDao;
     }
 
-    public Question saveQuestion(Question question) {return questionDao.save(question);}
+    public Question saveQuestion(Question question) {
+        return questionDao.save(question);}
 
     public void deleteQuestion(Long id) {
         questionDao.deleteById(id);
