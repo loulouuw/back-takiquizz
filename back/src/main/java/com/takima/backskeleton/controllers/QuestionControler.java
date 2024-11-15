@@ -43,6 +43,7 @@ public class QuestionControler {
                 .questionType(questionDto.getQuestionType())
                 .timeLimit(questionDto.getTimeLimit())
                 .image(questionDto.getImage())
+                .incorrectAnswers(questionDto.getIncorrectAnswers())
                 .quiz(quiz)
                 .build();
 

@@ -13,7 +13,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/players")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "http://localhost:4200", allowedHeaders = "*")
 public class PlayerControler {
 
     private PlayerService playerService;
