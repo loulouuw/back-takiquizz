@@ -6,8 +6,8 @@ INSERT INTO players (username, email, mdp, total_points) VALUES
                                                              ('player4', 'player4@example.com', 'mdp4', 1300);
 
 -- Insertion des quizzes
-INSERT INTO quizzes (id, title, description, time_limit_per_question) VALUES (1, 'General Knowledge', 'A quiz to test your general knowledge', 30);
-INSERT INTO quizzes (id, title, description, time_limit_per_question) VALUES (2, 'Science Trivia', 'How well do you know science?', 45);
+INSERT INTO quizzes (title, description, time_limit_per_question) VALUES ( 'General Knowledge', 'A quiz to test your general knowledge', 30);
+INSERT INTO quizzes (title, description, time_limit_per_question) VALUES ( 'Science Trivia', 'How well do you know science?', 45);
 
 -- Insertion des questions
 INSERT INTO questions (statement, correct_answer, incorrect_answers, question_type, image, time_limit, quiz_id) VALUES
