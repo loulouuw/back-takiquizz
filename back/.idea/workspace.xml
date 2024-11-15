@@ -5,19 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51929f3d-00f3-4018-9329-b2036557721e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6f26b6fd-270a-4efb-8544-49ae6824e875.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6f26b6fd-270a-4efb-8544-49ae6824e875/storage_v2/_src_/database/TakiBase.HNac3Q.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6f26b6fd-270a-4efb-8544-49ae6824e875/storage_v2/_src_/database/TakiBase.HNac3Q/schema/public.abK9xQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/825321fd-4afe-42f6-a92a-9c2704bbeca9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/825321fd-4afe-42f6-a92a-9c2704bbeca9/storage_v2/_src_/database/TakiBase.HNac3Q.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/825321fd-4afe-42f6-a92a-9c2704bbeca9/storage_v2/_src_/database/TakiBase.HNac3Q/schema/public.abK9xQ.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/takima/backskeleton/controllers/QuestionControler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/takima/backskeleton/controllers/QuestionControler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/takima/backskeleton/models/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/takima/backskeleton/models/Question.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/takima/backskeleton/controllers/QuestionControler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/takima/backskeleton/controllers/QuestionControler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/takima/backskeleton/models/Question.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/takima/backskeleton/models/Question.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,47 +39,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Database Script.1_TABLES.sql.executor&quot;: &quot;Run&quot;,
-    &quot;Database Script.2_DEFAULT_ENTRIES.sql.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.generated-requests | #1.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.back-skeleton [spring-boot:run].executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.BackSkeletonApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/nicol/OneDrive/Documents/Ecole/Cinquieme_annee/Projet-java/Taki-app/front-takiquizz&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Database Script.1_TABLES.sql.executor": "Run",
+    "Database Script.2_DEFAULT_ENTRIES.sql.executor": "Run",
+    "HTTP Request.generated-requests | #1.executor": "Run",
+    "Maven.back-skeleton [spring-boot:run].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.BackSkeletonApplication.executor": "Run",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/nicol/OneDrive/Documents/Ecole/Cinquieme_annee/Projet-java/Taki-app/front-takiquizz",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "settings.sync",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ],
-    &quot;RunConfigurationTargetLRU&quot;: [
-      &quot;8e7e97dd-e1d9-41bf-a5ae-e95258fd90d9&quot;,
-      &quot;42dafd31-47fc-48fb-9d92-a9cb815ec9e9&quot;,
-      &quot;7404ee3c-02f6-4b03-8b3c-73c42e8d3401&quot;,
-      &quot;7fc9428b-22cf-46b3-9af8-85665da293b9&quot;,
-      &quot;55c511d2-186f-4ef7-abef-13bf749453b0&quot;
+    "RunConfigurationTargetLRU": [
+      "8e7e97dd-e1d9-41bf-a5ae-e95258fd90d9",
+      "42dafd31-47fc-48fb-9d92-a9cb815ec9e9",
+      "7404ee3c-02f6-4b03-8b3c-73c42e8d3401",
+      "6f26b6fd-270a-4efb-8544-49ae6824e875",
+      "64d75719-37c0-47fa-a85d-0c016a5e46f3"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\nicol\OneDrive\Documents\Ecole\Cinquième année\Projet-java\Taki-Back\back\src\main\java\com\takima\backskeleton\Old" />
@@ -105,13 +91,13 @@
     <configuration name="1_TABLES.sql" type="DatabaseScript" editBeforeRun="true" nameIsGenerated="true">
       <script-file value="$PROJECT_DIR$/initdb/1_TABLES.sql" />
       <script-mode>FILE</script-mode>
-      <data-source id="7fc9428b-22cf-46b3-9af8-85665da293b9" />
+      <data-source id="64d75719-37c0-47fa-a85d-0c016a5e46f3" />
       <method v="2" />
     </configuration>
     <configuration name="2_DEFAULT_ENTRIES.sql" type="DatabaseScript" editBeforeRun="true" nameIsGenerated="true">
       <script-file value="$PROJECT_DIR$/initdb/2_DEFAULT_ENTRIES.sql" />
       <script-mode>FILE</script-mode>
-      <data-source id="55c511d2-186f-4ef7-abef-13bf749453b0" />
+      <data-source id="64d75719-37c0-47fa-a85d-0c016a5e46f3" />
       <method v="2" />
     </configuration>
     <configuration name="generated-requests | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" requestIdentifier="#1" runType="Run single request">
@@ -197,6 +183,7 @@
       <workItem from="1731446962444" duration="1681000" />
       <workItem from="1731493807709" duration="1294000" />
       <workItem from="1731503372843" duration="1543000" />
+      <workItem from="1731706866400" duration="1932000" />
     </task>
     <servers />
   </component>
