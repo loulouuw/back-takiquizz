@@ -75,9 +75,9 @@ public class PlayerControler {
     public ResponseEntity<LoginResponseDto> loginPlayer(@RequestBody LoginInputDto loginDTO) {
         try {
             Player player = playerService.authenticatePlayer(loginDTO);
-            return ResponseEntity.ok(new LoginResponseDto("Connexion réussie"));
+            return ResponseEntity.ok(new LoginResponseDto("Connexion réussie", player.getId()));
         } catch (IllegalArgumentException e) {
-            return ResponseEntity.status(401).body(new LoginResponseDto(e.getMessage()));
+            return ResponseEntity.status(401).body(new LoginResponseDto(e.getMessage(),0));
         }
     }
 
