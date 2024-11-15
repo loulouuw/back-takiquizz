@@ -36,6 +36,7 @@ public class QuestionControler {
 
     @PostMapping("")
     public Question saveQuestion(@RequestBody QuestionInputDto questionDto) {
+        System.out.println(questionDto.getQuizzId());
         Quiz quiz =  quizService.getQuizById(questionDto.getQuizzId());
         Question question = new Question.Builder()
                 .correctAnswer(questionDto.getCorrectAnswer())
@@ -46,7 +47,7 @@ public class QuestionControler {
                 .incorrectAnswers(questionDto.getIncorrectAnswers())
                 .quiz(quiz)
                 .build();
-
+        System.out.println(quiz);
         return questionService.saveQuestion(question);
     }
 

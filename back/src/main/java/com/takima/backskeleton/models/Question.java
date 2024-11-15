@@ -95,4 +95,18 @@ public class Question {
             return question;
         }
     }
+
+    @Override
+    public String toString() {
+        return "Question{" +
+                "id=" + id +
+                ", statement='" + statement + '\'' +
+                ", correctAnswer='" + correctAnswer + '\'' +
+                ", questionType='" + questionType + '\'' +
+                ", image='" + image + '\'' +
+                ", timeLimit=" + timeLimit +
+                ", incorrectAnswers='" + incorrectAnswers + '\'' +
+                ", quiz=" + quiz +
+                '}';
+    }
 }
