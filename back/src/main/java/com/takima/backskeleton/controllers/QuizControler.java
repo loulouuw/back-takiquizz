@@ -2,6 +2,7 @@ package com.takima.backskeleton.controllers;
 
 
 import com.takima.backskeleton.models.Quiz;
+import com.takima.backskeleton.models.dto.QuizzResponseDto;
 import com.takima.backskeleton.services.QuizService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -31,8 +32,12 @@ public class QuizControler {
     }
 
     @PostMapping("")
-    public Quiz saveQuiz(@RequestBody Quiz quiz) {
-        return quizService.saveQuiz(quiz);
+    public ResponseEntity<QuizzResponseDto> saveQuiz(@RequestBody Quiz quiz) {
+        Quiz savedQuiz = quizService.saveQuiz(quiz);
+
+        QuizzResponseDto responseDto = new QuizzResponseDto(savedQuiz.getId());
+
+        return ResponseEntity.ok(responseDto);
     }
 
     @DeleteMapping("/{id}")

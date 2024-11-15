@@ -4,6 +4,7 @@ import com.takima.backskeleton.DAO.QuizDao;
 import com.takima.backskeleton.models.Player;
 import com.takima.backskeleton.models.Question;
 import com.takima.backskeleton.models.Quiz;
+import com.takima.backskeleton.models.dto.QuizzResponseDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -38,5 +39,8 @@ public class QuizService {
     public Quiz getQuizById(long id) {
         return quizDao.findById(id);
     }
-
+    public QuizzResponseDto createQuiz(Quiz quiz ) {
+        Quiz savedQuiz = quizDao.save(quiz);
+        return new QuizzResponseDto(savedQuiz.getId());
+    }
 }
