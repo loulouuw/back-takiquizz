@@ -2,6 +2,9 @@ package com.takima.backskeleton.controllers;
 
 
 import com.takima.backskeleton.models.Player;
+import com.takima.backskeleton.models.dto.LoginInputDto;
+import com.takima.backskeleton.models.dto.LoginResponseDto;
+import com.takima.backskeleton.models.dto.RegisterInputDto;
 import com.takima.backskeleton.services.PlayerService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -58,6 +61,26 @@ public class PlayerControler {
     public List<Player> findPlayersWithMoreThanXPoints(@PathVariable int points) {
         return playerService.findPlayersWithMoreThanXPoints(points);
     }
+    @PostMapping("/register")
+    public ResponseEntity<String> registerPlayer(@RequestBody RegisterInputDto registerDTO) {
+        try {
+            playerService.registerPlayer(registerDTO);
+            return ResponseEntity.status(201).body("Joueur enregistré avec succès.");
+        } catch (IllegalArgumentException e) {
+            return ResponseEntity.status(400).body(e.getMessage());
+        }
+    }
+
+    @PostMapping("/login")
+    public ResponseEntity<LoginResponseDto> loginPlayer(@RequestBody LoginInputDto loginDTO) {
+        try {
+            Player player = playerService.authenticatePlayer(loginDTO);
+            return ResponseEntity.ok(new LoginResponseDto("Connexion réussie"));
+        } catch (IllegalArgumentException e) {
+            return ResponseEntity.status(401).body(new LoginResponseDto(e.getMessage()));
+        }
+    }
+
 
 
 }

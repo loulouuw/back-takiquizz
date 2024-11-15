@@ -1,8 +1,9 @@
 -- Insertion des joueurs
-INSERT INTO players (id, username, email, mdp, total_points) VALUES (1, 'player1', 'player1@example.com','mdp1', 1200);
-INSERT INTO players (id, username, email, mdp,total_points) VALUES (2, 'player2', 'player2@example.com', 'mdp2',1500);
-INSERT INTO players (id, username, email, mdp,total_points) VALUES (3, 'player3', 'player3@example.com', 'mdp3',1000);
-INSERT INTO players (id, username, email, mdp,total_points) VALUES (4, 'player4', 'player4@example.com', 'mdp4',1300);
+INSERT INTO players (username, email, mdp, total_points) VALUES
+                                                             ('player1', 'player1@example.com', 'mdp1', 1200),
+                                                             ('player2', 'player2@example.com', 'mdp2', 1500),
+                                                             ('player3', 'player3@egitxample.com', 'mdp3', 1000),
+                                                             ('player4', 'player4@example.com', 'mdp4', 1300);
 
 -- Insertion des quizzes
 INSERT INTO quizzes (id, title, description, time_limit_per_question) VALUES (1, 'General Knowledge', 'A quiz to test your general knowledge', 30);

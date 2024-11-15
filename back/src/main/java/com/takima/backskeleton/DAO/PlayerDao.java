@@ -11,5 +11,6 @@ public interface PlayerDao extends JpaRepository <Player, Long> {
     Player findById(long id);
     Player findByEmail(String email);
     List<Player> findByTotalPointsGreaterThan(int points);
-
+    boolean existsByEmail(String email);
+    boolean existsByUsername(String username);
 }
